@@ -12,15 +12,15 @@ Our project aims to provide a comprehensive solution for individuals seeking to 
 5. **Chatbot Assistance:** To enhance user experience, our application includes a chatbot that assists users with queries and provides helpful information on financial topics.
 
 # USE CASE
-1.**Personal Finance Management:**
+1. **Personal Finance Management:**
    Centralized platform for efficient management of personal finances, including expense tracking, goal setting, and spending analysis.
-2.**Budgeting and Expense Control:**
+2. **Budgeting and Expense Control:**
    Helps users create and stick to budgets by setting expense limits and receiving notifications to avoid overspending.
-3.**Savings and Goal Achievement:**
+3. **Savings and Goal Achievement:**
    Encourages users to save and work towards financial objectives by setting specific savings targets and tracking progress.
-4.**Financial Awareness and Analysis:**
+4. **Financial Awareness and Analysis:**
    Provides insights into spending habits through interactive charts and graphs, enabling informed financial decisions.
-5.**Financial Education and Support:**
+5. **Financial Education and Support:**
    Includes a chatbot for personalized assistance, offering financial advice, money-saving tips, and educational resources.
 
 # PROPOSED SOLUTION
@@ -29,11 +29,11 @@ Managing personal finances is a common challenge faced by individuals today. Lac
 
 Our proposed solution is a user-friendly finance tracker web application that aims to empower individuals in managing their personal finances effectively. It includes the following key features:
 
-1.**Expense Tracking and Management:** Users can easily track their daily expenses and categorize them for better organization and analysis.
-2.**Goal Setting and Savings:** The application allows users to set specific savings goals and provides tools to track their progress, fostering a disciplined approach to savings.
-3.**Data Analysis and Insights:** Interactive charts and graphs offer visual insights into spending habits, helping users make informed financial decisions.
-4.**Chatbot Assistance:** A personalized chatbot provides financial advice, money-saving tips, and answers to user queries, enhancing user engagement and interaction with the application.
-5.**Account Management and Periodic Expense Tracking:** Users can manage multiple accounts in one place and track periodic expenses such as bills and subscriptions, ensuring better financial organization
+1. **Expense Tracking and Management:** Users can easily track their daily expenses and categorize them for better organization and analysis.
+2. **Goal Setting and Savings:** The application allows users to set specific savings goals and provides tools to track their progress, fostering a disciplined approach to savings.
+3. **Data Analysis and Insights:** Interactive charts and graphs offer visual insights into spending habits, helping users make informed financial decisions.
+4. **Chatbot Assistance:** A personalized chatbot provides financial advice, money-saving tips, and answers to user queries, enhancing user engagement and interaction with the application.
+5. **Account Management and Periodic Expense Tracking:** Users can manage multiple accounts in one place and track periodic expenses such as bills and subscriptions, ensuring better financial organization
 
 
 
