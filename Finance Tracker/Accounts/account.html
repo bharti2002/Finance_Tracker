@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Account</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="img" alt="Finance Tracker"></div>
+            <ul>
+                <li><a class="active" href="../index.html">Home</a></li>
+                <li><a href="../Analysis/analysis.html">Analysis</a></li>
+                <li><a href="../Category Wise/index.html">Budget</a></li>
+                <li><a href="../Accounts/account.html">Account</a></li>
+                <li><a href="../Goals/goal.html">Goals</a></li>
+                <li><a href="../ChatBot/index.html">Contact Us</a></li>
+            </ul>
+
+
+            <a class="get-started" href="login.html">Get Started</a>
+
+            </div>
+    </header>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Account</h1>
+        </div>
+        <div class="acc-number-container">
+            ACCOUNT NUMBER: <span class="acc-number">1234567890</span>
+        </div>
+        <div class="acc-dtls-container">
+            <div class="acc-dtls">
+                <!--divs for expenses, income and balance-->
+                <div class="upper-acc-dtls-box">
+                    <div class="expenses">
+                        <div class="expenses-title">
+                            EXPENSES
+                        </div>
+                        <div class="expenses-amount">
+                            &#8377; 2000
+                        </div>
+                    </div>
+                    <div class="income">
+                        <div class="income-title">
+                            INCOME
+                        </div>
+                        <div class="income-amount">
+                            &#8377; 5000
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-acc-dtls-box">
+
+                    <div class="balance">
+                        <div class="balance-title">
+                            BALANCE
+                        </div>
+                        <div class="balance-amount">
+                            &#8377; 3000
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="balance-dtls-container">
+            <div class="balance-dtls">
+                <!--divs for card-balance, cash-balance and savings-->
+                <div class="card-balance">
+
+                    <div class="card-balance-title">
+                        <i class="fa-regular fa-credit-card fa-xl" style="color: #0077b6;"></i>
+                        CARD BALANCE
+                    </div>
+                    <div class="card-balance-amount">
+                        &#8377; 1000
+                    </div>
+                </div>
+                <div class="cash-balance">
+                    <div class="cash-balance-title">
+                        <i class="fa-solid fa-indian-rupee-sign fa-xl" style="color: #0077b6;"></i>
+                        CASH BALANCE
+                    </div>
+                    <div class="cash-balance-amount">
+                        &#8377; 2000
+                    </div>
+                </div>
+                <div class="savings">
+                    <div class="savings-title">
+                        <i class="fa-solid fa-piggy-bank fa-xl" style="color: #0077b6;"></i>
+                        SAVINGS
+                    </div>
+                    <div class="savings-amount">
+                        &#8377; 1000
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="account.js"></script>
+</body>
+
+</html>

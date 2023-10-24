@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="dailyrecord.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="img" alt="Finance Tracker"></div>
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li>
+        <li><a href="./Analysis/analysis.html">Analysis</a></li>
+				<li><a href="./Category Wise/index.html">Budget</a></li>
+				<li><a href="./Accounts/account.html">Account</a></li>
+				<li><a href="./Goals/goal.html">Goals</a></li>
+				<li><a href="ChatBot/index.html">Contact Us</a></li>
+			</ul>
+			
+					
+			<a class="get-started" href="login.html">Get Started</a>
+		
+		</div>
+	</header>
+  <div class="container">
+    <div class="left">
+      <img src="./Assets/logo.jpeg" alt="Image">
+    </div>
+    <div class="right">
+      <h1>Hello, XYZ</h1>
+      <p><h2>What expenses did you make today?</h2></p>
+      <button id="balanceButton">Check Your Current Balance</button>
+    </div>
+  </div>
+
+  
+  <font color="#0077b6"><h1 class="center">Daily Expense Records</h1></font>
+
+  <div class="expense-list">
+    <div class="expense-entry">
+      <div class="expense-description">Groceries</div>
+      <div class="expense-amount">-$50</div>
+      <div class="expense-actions">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+
+    <div class="expense-entry">
+      <div class="expense-description">Rent</div>
+      <div class="expense-amount">-$100</div>
+      <div class="expense-actions">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+    </div>
+
+    <!-- Add more expense entries here -->
+  
+    <div class="expense-entry">
+      <div class="expense-description">Food</div>
+      <div class="expense-amount">-$80</div>
+      <div class="expense-actions">
+        <button class="edit-button">Edit</button>
+        <button class="delete-button">Delete</button>
+      </div>
+
+
+  </div>
+
+  <div class="expense-entry">
+    <div class="expense-description">Gifts</div>
+    <div class="expense-amount">-$20</div>
+    <div class="expense-actions">
+      <button class="edit-button">Edit</button>
+      <button class="delete-button">Delete</button>
+    </div>
+  </div>
+
+  <div class="expense-entry">
+    <div class="expense-description">Bills</div>
+    <div class="expense-amount">-$150</div>
+    <div class="expense-actions">
+      <button class="edit-button">Edit</button>
+      <button class="delete-button">Delete</button>
+    </div>
+  </div>
+
+  <center><button id="addExpenseButton" class="add-expense-button">Add Expense</button></div></center>
+
+
+  <script src="dailyrecord.js"></script>
+</body>
+</html>

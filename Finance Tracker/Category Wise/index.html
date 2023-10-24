@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+<header id="header">
+  <nav>
+    <div class="logo"><img src="img" alt="Finance Tracker"></div>
+    <ul>
+      <li><a class="active" href="../index.html">Home</a></li>
+      <li><a href="../Analysis/analysis.html">Analysis</a></li>
+      <li><a href="../Category Wise/index.html">Budget</a></li>
+      <li><a href="../Accounts/account.html">Account</a></li>
+      <li><a href="../Goals/goal.html">Goals</a></li>
+      <li><a href="../ChatBot/index.html">Contact Us</a></li>
+    </ul>
+
+
+    <a class="get-started" href="login.html">Get Started</a>
+
+    </div>
+  </nav>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #FFF;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    header {
+      height: 21vh;
+    }
+
+    .black {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      top: 0;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      z-index: 1000;
+      background: rgb(125, 214, 249);
+      justify-content: space-around;
+      transition: 1.5s;
+      align-items: center;
+      /* font-weight: bold;  Added font weight */
+      font-size: 18px;
+      /* Increased font size */
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 5px 10px;
+    }
+
+    nav ul li a {
+      padding: 2px 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: .5s;
+      text-decoration: none;
+      font-size: 25 px;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+      border-radius: 15px;
+      background: #0077b6;
+
+    }
+
+    .active {
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    .srch {
+      padding: 2px 10px;
+      display: flex;
+      border: 1px solid;
+      border-radius: 20px;
+    }
+
+    .srch img {
+      width: 25px;
+      cursor: pointer;
+    }
+
+    .srch .search {
+      outline: none;
+      border: none;
+      background: transparent;
+    }
+
+    .get-started {
+      margin-left: 50px;
+      padding: 5px 20px;
+      border: 2px solid #0077b6;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: .5s;
+      background-color: #0077b6;
+      color: #fff;
+      font-weight: bold;
+      /* Added font weight */
+      font-size: 16px;
+      /* Increased font size */
+    }
+
+    .get-started:hover {
+      color: #0077b6;
+      background: #fff;
+    }
+
+    .logo img {
+      width: 120px;
+      cursor: pointer;
+      transition: all 1s;
+    }
+
+    a,
+    button {
+      float: left;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: #0077b6;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .head-container {
+      margin-top: 245px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+  </style>
+</header>
+
+<body>
+
+  <div class="container">
+    <div class="border p-3">
+      <div class="text-center mb-4">
+        <h1>Budget/Category Wise</h1>
+      </div>
+
+      <div class="category-container">
+        <div class="category">
+          <h2>Shopping</h2>
+          <p>Limit: 2500</p>
+          <p>Spent: 1500</p>
+          <p>Remaining: 1000</p>
+          <div class="range-bar" style="width: 60%"></div>
+        </div>
+        <div class="category">
+          <h2>Food</h2>
+          <p>Limit: 2000</p>
+          <p>Spent: 1000</p>
+          <p>Remaining: 1000</p>
+          <div class="range-bar" style="width: 50%"></div>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary set-budget-button" data-bs-toggle="modal"
+        data-bs-target="#addCategoryModal">
+        Set Budget
+      </button>
+    </div>
+  </div>
+
+  <!-- Add Category Modal -->
+  <div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addCategoryModalLabel">Add Category</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="category-name" class="form-label">Category Name</label>
+            <input type="text" class="form-control" id="category-name">
+          </div>
+          <div class="mb-3">
+            <label for="category-limit" class="form-label">Limit</label>
+            <input type="number" class="form-control" id="category-limit">
+          </div>
+          <div class="mb-3">
+            <label for="category-spent" class="form-label">Spent</label>
+            <input type="number" class="form-control" id="category-spent">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="add-category-button">Add Category</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

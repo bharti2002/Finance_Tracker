@@ -1,0 +1,52 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f8f9fa;
+  padding: 15px;
+  transition: all 0.3s;
+}
+
+.side-nav.active {
+  left: -250px;
+}
+
+.border {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.user-icon {
+  float: right;
+  /* Styles for user icon or avatar */
+}
+
+.category-container {
+  margin-bottom: 20px;
+}
+
+.category {
+  margin-bottom: 10px;
+}
+
+.range-bar {
+  height: 20px;
+  background-color: #33ec1b;
+  /* border: solid 1px black; */
+  width: 100%;
+}
+
+.set-budget-button {
+  margin-top: 20px;
+}
